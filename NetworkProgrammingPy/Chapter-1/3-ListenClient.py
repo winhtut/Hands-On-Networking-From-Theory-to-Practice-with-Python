@@ -6,3 +6,7 @@ PORT = 65432
 server_socket.bind((HOST, PORT))
 print("Server Ready!")
 
+server_socket.listen(1)
+print(f"Server  {HOST}:{PORT} Listen!")
+conn, addr = server_socket.accept()
+
